@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lance.dotaalarmclock.presentation.ui.activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/main_activity_background"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_background" />
+
+    <ImageView
+        android:id="@+id/mainActivatedBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/main_activity_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_activated_background" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartAlarm"
+        style="@style/StartAlarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:onClick="onStartAlarmClicked"
+        android:text="@string/btn_start_alarm"
+        android:textColor="#b5cde1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnCancelAlarm"
+        style="@style/CancelAlarmButton"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:onClick="onCancelAlarmClicked"
+        android:paddingBottom="24dp"
+        android:text="@string/btn_cancel_alarm"
+        android:textSize="36sp"
+        android:textColor="#b5cde1"
+        android:gravity="bottom|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:background="@drawable/ic_info"
+        android:layout_width="@dimen/infoButtonSize"
+        android:layout_height="@dimen/infoButtonSize"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onInfoClicked"
+        android:textColor="#b5cde1"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/timeBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000"
+        android:alpha="0.4"
+        app:layout_constraintTop_toTopOf="@id/alarmSetLabel"
+        app:layout_constraintBottom_toBottomOf="@id/alarmTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"/>
+
+    <TextView
+        android:id="@+id/alarmSetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:alpha="0.85"
+        android:fontFamily="@font/alarm_set_font"
+        android:text="@string/alarm_set"
+        android:textColor="#ce233c"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/alarmTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/alarmTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:paddingBottom="16dp"
+        android:alpha="0.8"
+        android:fontFamily="@font/alarm_time_font"
+        android:textColor="@android:color/white"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnCancelAlarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="18:29" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/lightGrey</item>
+    </style>
+
+    <style name="StartAlarmButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/start_button</item>
+        <item name="android:fontFamily">@font/kanyon_regular</item>
+    </style>
+
+    <style name="CancelAlarmButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/cancel_button</item>
+        <item name="android:fontFamily">@font/kanyon_regular</item>
+    </style>
+
+    <style name="StopAlarmButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/stop_button</item>
+        <item name="android:fontFamily">@font/pelmeshka</item>
+    </style>
+
+    <style name="AboutButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/start_button</item>
+    </style>
+
+    <style name="InfoText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/lightGrey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

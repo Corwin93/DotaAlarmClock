@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "914293160733",
+    "firebase_url": "https://dotaalarmclock.firebaseio.com",
+    "project_id": "dotaalarmclock",
+    "storage_bucket": "dotaalarmclock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914293160733:android:b780bba0055f43ab",
+        "android_client_info": {
+          "package_name": "com.lance.dotaalarmclock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914293160733-9q0h137tj3irija7u31mh8glmpinftil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lance.dotaalarmclock",
+            "certificate_hash": "cd022ff80048c126b1aa4cbba58e282faa42ccc8"
+          }
+        },
+        {
+          "client_id": "914293160733-813o89lh2vtnb8k4gj3t17bj10colu43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lance.dotaalarmclock",
+            "certificate_hash": "bd74e5829e20c9b909655703519fe20a722b71c5"
+          }
+        },
+        {
+          "client_id": "914293160733-uht3geqt1cbulve0oc2732guk6907lpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEDx-KEpkXoeQqHw0kVAEn_UZXD83-Xis"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914293160733-uht3geqt1cbulve0oc2732guk6907lpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

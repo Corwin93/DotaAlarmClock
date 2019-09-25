@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="itemBoxWidth">44dp</dimen>
+    <dimen name="itemBoxHeight">32dp</dimen>
+    <dimen name="stopButtonHeight">88dp</dimen>
+    <dimen name="infoButtonSize">24dp</dimen>
+</resources>
